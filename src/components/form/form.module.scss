@@ -1,0 +1,70 @@
+@import '../../styles/media';
+
+.userForm {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 100px;
+
+    .title {
+        @include mobile-s {
+            width: 300px;
+        }
+    }
+
+
+    .form {
+        margin-top: 50px;
+        width: 380px;
+        position: relative;
+
+        @include mobile-s {
+            width: 360px;
+            padding-inline: 16px;
+        }
+
+        .textFilds {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+        }
+
+        .phone {
+            font-family: var(--nunito), sans-serif;
+            position: absolute;
+            bottom: -20px;
+            left: 15px;
+            font-size: 12px;
+            line-height: 117%;
+            color: #7e7e7e;
+        }
+
+        .selectYourPosition {
+            margin-top: 21px;
+
+            .select {
+                margin-top: 45px;
+            }
+
+            .radions {
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                row-gap: 9px;
+                margin-left: -8px;
+                margin-top: 11px;
+                margin-bottom: 49px;
+            }
+        }
+
+        .signUp {
+            display: flex;
+            margin: 50px auto 0 auto;
+            cursor:default;
+        }
+    }
+}
+

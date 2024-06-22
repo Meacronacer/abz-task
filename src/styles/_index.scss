@@ -1,0 +1,23 @@
+
+@import '../../node_modules/reset-css/sass/reset';
+@import './fonts';
+@import './globals';
+@import './normalize';
+
+:root {
+  --primary: #f4e041;
+  --secondary: #00bdd3;
+  --black-87: rgba(0, 0, 0, 0.87);
+  --nunito: Nunito;
+  --asap: asap;
+  color: var(--black-87);
+  background-color: #f8f8f8;
+  font-family: "Nunito", "Asap", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

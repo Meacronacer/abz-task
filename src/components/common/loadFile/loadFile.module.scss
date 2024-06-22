@@ -1,0 +1,29 @@
+
+
+.loadFile {
+    display: flex;
+    margin-left: -2px;
+
+    .uploadLabel {
+        border-radius: 4px 0 0 4px;
+        padding: 14px 15px;
+        border: solid 1px;
+    }
+
+    .fileName {
+        padding: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        border: 1px solid #d0cfcf;
+        border-left: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    input[type=file] {
+        display: none;
+      }
+}

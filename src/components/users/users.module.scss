@@ -1,0 +1,46 @@
+@import '../../styles/media';
+
+
+.users {
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+    align-items: center;
+
+
+    .title {
+        @include mobile-s {
+            width: 300px;
+        }
+    }
+
+    .itemsList {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 29px;
+
+        @include tablet {
+            padding-inline: 60px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+            padding-inline: 32px;
+            gap: 16px;
+        }
+
+        @include mobile-s {
+            grid-template-columns: repeat(1, 1fr);
+            padding-inline: 16px;
+            gap: 20px;
+        }
+    }
+
+    .showMore {
+        width: 120px;
+        padding: 4px 0;
+    }
+}
